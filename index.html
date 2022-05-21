@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>SneakyTank5 | 2 years of scratching.</title>
+<link rel="stylesheet" href="index.css">
+<body>
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 28, 2022 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Happy birthday, my Scratch account! (If it is May 28, 2022, that IS my scratch birthday.)";
+  }
+}, 1000);
+</script>
+  
+<h1>2 years of scratching.</h1>
+<p>----------------------------------</p>
+<p>It's been so fun scratching online, sharing my projects with the world as I go! I've currently hit 1089 projects as of May 21, 2022 6:53 PM, and Scratch has been awesome. But. Maybe it's time to move on. Time to move on to something bigger, better. I'm super hyped for my 2 year scratch anniversery, but...who knows at this point. Will it be over? Who knows.</p>
+<p> </p>
+  <a href="https://scratch.mit.edu/users/SneakyTank5 target="_blank">Follow me on scratch for more news!</a>
+<h1>Social Medias</h1>
+<p>Mario Maker 2 ID: 3T4-SDT-D7G
+GD: ST5Playz
+Switch: ST5
+Alt (that is no longer dead): @ST5Animate
+Tynker:
+https://www.tynker.com/community/profiles/60450033fbec304856017b45
+Minecraft Bedrock Server: sneakyfun.aternos.me
+Server Port: 35734</p>
+
+</body>
+</html>
